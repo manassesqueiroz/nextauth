@@ -2,7 +2,7 @@ import { signIn } from "@/auth"
 import { SigninButton } from "../components/AuthButtons"
 import { auth } from "@/auth"
 import { redirect } from "next/navigation"
-import { Form } from "../components/FormLogin"
+import { FormLogin } from "../components/FormLogin"
 
 export default async function Page() {
   const session = await auth()
@@ -61,7 +61,7 @@ export default async function Page() {
           Sign in with Google
         </span>
       </SigninButton>
-      <Form />
+      <FormLogin />
     </div>
   )
 }
